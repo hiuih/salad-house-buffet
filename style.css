@@ -347,8 +347,10 @@ img {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    background:
-        linear-gradient(135deg, var(--green-900) 0%, var(--green-700) 50%, var(--green-600) 100%);
+    background: 
+        linear-gradient(rgba(0, 38, 26, 0.7), rgba(0, 38, 26, 0.7)),
+        url("https://images.unsplash.com/photo-1543352658-9270447fc339?auto=format&fit=crop&q=80&w=2000") no-repeat center center;
+    background-size: cover;
 }
 
 .hero::before {
@@ -531,29 +533,37 @@ img {
     height: 50%;
 }
 
-.image-placeholder {
+.about-image-card img {
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, var(--green-200), var(--green-100));
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    min-height: 200px;
+    object-fit: cover;
+    display: block;
 }
 
-.image-placeholder i {
-    font-size: 3rem;
-    color: var(--green-600);
-    opacity: 0.6;
+/* --- Gallery Section --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
 }
 
-.image-placeholder span {
-    font-weight: 500;
-    color: var(--green-700);
-    opacity: 0.7;
-    font-size: 0.9rem;
+.gallery-item {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    height: 350px;
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* --- Features --- */
@@ -760,6 +770,21 @@ img {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(8px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-banner {
+    width: 100%;
+    margin-bottom: 32px;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    height: 250px;
+}
+
+.menu-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .menu-tab-note {
