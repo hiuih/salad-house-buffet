@@ -1230,6 +1230,10 @@ img {
         grid-template-columns: 1fr;
     }
 
+    .detailed-menu-grid {
+        grid-template-columns: 1fr;
+    }
+
     /* Reviews */
     .reviews-grid {
         grid-template-columns: 1fr;

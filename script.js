@@ -103,4 +103,20 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', highlightNav, { passive: true });
+
+    // --- Menu tab switching ---
+    const menuTabs = document.querySelectorAll('.menu-tab');
+    const menuTabContents = document.querySelectorAll('.menu-tab-content');
+
+    menuTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.getAttribute('data-tab');
+
+            menuTabs.forEach(t => t.classList.remove('active'));
+            menuTabContents.forEach(c => c.classList.remove('active'));
+
+            tab.classList.add('active');
+            document.getElementById('tab-' + target).classList.add('active');
+        });
+    });
 });
