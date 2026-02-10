@@ -243,6 +243,17 @@ img {
     transition: color var(--transition);
 }
 
+.logo-img {
+    height: 40px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    transition: filter var(--transition);
+}
+
+.navbar.scrolled .logo-img {
+    filter: none;
+}
+
 .navbar.scrolled .logo {
     color: var(--green-900);
 }
@@ -358,6 +369,14 @@ img {
     position: relative;
     z-index: 2;
     padding: 120px 20px 80px;
+}
+
+.hero-logo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 28px;
+    filter: brightness(0) invert(1);
+    display: block;
 }
 
 .hero-badge {
@@ -846,6 +865,11 @@ img {
 
 .footer-brand .logo {
     margin-bottom: 16px;
+}
+
+.footer-logo-img {
+    height: 36px;
+    filter: brightness(0) invert(1);
 }
 
 .footer-brand p {
