@@ -5,16 +5,16 @@
 
 /* --- CSS Variables --- */
 :root {
-    --green-900: #1a3a2a;
-    --green-800: #1e4d35;
-    --green-700: #256d42;
-    --green-600: #2d8a4e;
-    --green-500: #34a853;
-    --green-400: #5cb978;
-    --green-300: #85cb9a;
-    --green-200: #b3dfbf;
-    --green-100: #d9f0e0;
-    --green-50: #edf8f0;
+    --green-900: #00261a;
+    --green-800: #003d2b;
+    --green-700: #005236;
+    --green-600: #006242;
+    --green-500: #00805a;
+    --green-400: #00a374;
+    --green-300: #33b88f;
+    --green-200: #80d4b5;
+    --green-100: #b3e6d1;
+    --green-50: #e6f5ee;
 
     --white: #ffffff;
     --off-white: #f9fcfa;
@@ -244,14 +244,17 @@ img {
 }
 
 .logo-img {
-    height: 40px;
+    height: 36px;
     width: auto;
-    filter: brightness(0) invert(1);
-    transition: filter var(--transition);
+    background: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    transition: all var(--transition);
 }
 
 .navbar.scrolled .logo-img {
-    filter: none;
+    background: transparent;
+    padding: 4px 0;
 }
 
 .navbar.scrolled .logo {
@@ -352,8 +355,8 @@ img {
     position: absolute;
     inset: 0;
     background:
-        radial-gradient(circle at 20% 80%, rgba(52, 168, 83, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(92, 185, 120, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 20% 80%, rgba(0, 98, 66, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 128, 90, 0.2) 0%, transparent 50%),
         radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.03) 0%, transparent 70%);
 }
 
@@ -372,11 +375,13 @@ img {
 }
 
 .hero-logo {
-    width: 150px;
-    height: 150px;
-    margin: 0 auto 28px;
-    filter: brightness(0) invert(1);
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 24px;
     display: block;
+    background: white;
+    border-radius: 50%;
+    padding: 6px;
 }
 
 .hero-badge {
@@ -573,7 +578,7 @@ img {
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-    background: rgba(52, 168, 83, 0.2);
+    background: rgba(0, 98, 66, 0.2);
     border-radius: 50%;
     font-size: 1.4rem;
     color: var(--green-300);
@@ -868,8 +873,10 @@ img {
 }
 
 .footer-logo-img {
-    height: 36px;
-    filter: brightness(0) invert(1);
+    height: 32px;
+    background: white;
+    padding: 4px 10px;
+    border-radius: 6px;
 }
 
 .footer-brand p {
