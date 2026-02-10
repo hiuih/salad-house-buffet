@@ -147,11 +147,12 @@ img {
 }
 
 .btn-nav {
-    padding: 10px 24px;
+    padding: 8px 20px;
     background: var(--green-600);
     color: var(--white) !important;
     border-color: var(--green-600);
     border-radius: var(--radius-xl);
+    font-size: 0.85rem;
 }
 
 .btn-nav:hover {
