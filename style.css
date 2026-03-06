@@ -1407,3 +1407,66 @@ img {
         grid-template-columns: 1fr;
     }
 }
+
+/* --- Rewards App Section --- */
+.rewards-app {
+    background: var(--green-50);
+}
+
+.rewards-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-bottom: 48px;
+}
+
+.reward-feature {
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.reward-feature:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.reward-feature .feature-icon {
+    width: 64px;
+    height: 64px;
+    background: var(--green-50);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    font-size: 1.5rem;
+    color: var(--green-600);
+}
+
+.reward-feature h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    color: var(--gray-700);
+    margin-bottom: 8px;
+}
+
+.reward-feature p {
+    color: var(--gray-400);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.rewards-cta {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .rewards-features {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
