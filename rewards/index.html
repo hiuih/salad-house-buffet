@@ -172,6 +172,15 @@
 
     <div id="root"></div>
     <script>
+      // Restore path from GitHub Pages 404 redirect
+      (function() {
+        var params = new URLSearchParams(window.location.search);
+        var redirect = params.get('redirect');
+        if (redirect) {
+          window.history.replaceState(null, '', redirect);
+        }
+      })();
+
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/rewards/sw.js', { scope: '/rewards/' });
       }
