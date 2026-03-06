@@ -1,4 +1,4 @@
-const CACHE_NAME = 'salad-house-rewards-v2';
+const CACHE_NAME = 'salad-house-rewards-v3';
 const ASSETS_TO_CACHE = [
   '/rewards/',
   '/rewards/index.html',
