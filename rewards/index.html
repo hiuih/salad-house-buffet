@@ -28,10 +28,9 @@
         }
       })();
     </script>
-    <script type="module" crossorigin src="/rewards/assets/index-C-MTqH2d.js"></script>
-    <link rel="stylesheet" crossorigin href="/rewards/assets/index-LmyjxCoO.css">
+    <script type="module" crossorigin src="/rewards/assets/index-DVfIlYFx.js"></script>
+    <link rel="stylesheet" crossorigin href="/rewards/assets/index-87NQJm0v.css">
     <style>
-      /* Install Gate Overlay */
       #install-gate {
         position: fixed;
         inset: 0;
@@ -116,12 +115,8 @@
         color: #4a5a50;
         line-height: 1.5;
       }
-      .gate-step-text i {
-        color: #00805a;
-      }
-      .gate-step-text strong {
-        color: #1e2822;
-      }
+      .gate-step-text i { color: #00805a; }
+      .gate-step-text strong { color: #1e2822; }
       .gate-home-link {
         display: inline-block;
         margin-top: 24px;
@@ -130,16 +125,12 @@
         font-size: 0.85rem;
         font-weight: 600;
       }
-      .gate-home-link:hover {
-        text-decoration: underline;
-      }
-      /* Show different instructions for iOS vs Android */
+      .gate-home-link:hover { text-decoration: underline; }
       .gate-ios, .gate-android { display: none; }
     </style>
   </head>
 
   <body>
-    <!-- Install Gate - shown when not in standalone mode -->
     <div id="install-gate">
       <div class="gate-card">
         <div class="gate-icon"><i class="fas fa-mobile-screen"></i></div>
@@ -147,8 +138,6 @@
         <p>To use this app, you need to add it to your home screen first. It only takes a few seconds!</p>
         <hr class="gate-divider">
         <div class="gate-steps-title">How to install</div>
-
-        <!-- iOS Instructions -->
         <div class="gate-ios" id="gate-ios">
           <div class="gate-step">
             <div class="gate-step-num">1</div>
@@ -163,8 +152,6 @@
             <div class="gate-step-text">Tap <strong>"Add"</strong> in the top right, then open from your home screen</div>
           </div>
         </div>
-
-        <!-- Android Instructions -->
         <div class="gate-android" id="gate-android">
           <div class="gate-step">
             <div class="gate-step-num">1</div>
@@ -179,7 +166,6 @@
             <div class="gate-step-text">Tap <strong>"Install"</strong> and open from your home screen</div>
           </div>
         </div>
-
         <a href="/" class="gate-home-link"><i class="fas fa-arrow-left"></i> Back to saladhouse.ca</a>
       </div>
     </div>
@@ -190,7 +176,6 @@
         navigator.serviceWorker.register('/rewards/sw.js', { scope: '/rewards/' });
       }
 
-      // Detect standalone mode (installed to homescreen)
       (function() {
         var isStandalone = window.matchMedia('(display-mode: standalone)').matches
           || window.navigator.standalone === true;
@@ -198,13 +183,9 @@
         var gate = document.getElementById('install-gate');
 
         if (isStandalone) {
-          // App is installed - hide the gate
           gate.classList.add('hidden');
         } else {
-          // App is in browser - show install instructions
           gate.classList.remove('hidden');
-
-          // Detect iOS vs Android
           var ua = navigator.userAgent || '';
           var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
           var isAndroid = /Android/.test(ua);
@@ -214,7 +195,6 @@
           } else if (isAndroid) {
             document.getElementById('gate-android').style.display = 'block';
           } else {
-            // Desktop or unknown - show both
             document.getElementById('gate-ios').style.display = 'block';
             document.getElementById('gate-android').style.display = 'block';
           }
