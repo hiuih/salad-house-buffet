@@ -215,4 +215,20 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = `opacity 0.6s ease ${i * 0.1}s, transform 0.6s ease ${i * 0.1}s`;
         observer.observe(el);
     });
+
+    // --- Install Guide Tab Switching ---
+    const installTabs = document.querySelectorAll('.install-tab');
+    const installSteps = document.querySelectorAll('.install-steps');
+
+    installTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const target = tab.getAttribute('data-install');
+
+            installTabs.forEach(t => t.classList.remove('active'));
+            installSteps.forEach(s => s.classList.remove('active'));
+
+            tab.classList.add('active');
+            document.getElementById('install-' + target).classList.add('active');
+        });
+    });
 });
