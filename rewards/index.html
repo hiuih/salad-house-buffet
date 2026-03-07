@@ -2,6 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      // Restore path from GitHub Pages 404 SPA redirect - must run before React
+      (function() {
+        var params = new URLSearchParams(window.location.search);
+        var redirect = params.get('redirect');
+        if (redirect) {
+          window.history.replaceState(null, '', redirect);
+        }
+      })();
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -172,15 +182,6 @@
 
     <div id="root"></div>
     <script>
-      // Restore path from GitHub Pages 404 redirect
-      (function() {
-        var params = new URLSearchParams(window.location.search);
-        var redirect = params.get('redirect');
-        if (redirect) {
-          window.history.replaceState(null, '', redirect);
-        }
-      })();
-
       if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/rewards/sw.js', { scope: '/rewards/' });
       }
