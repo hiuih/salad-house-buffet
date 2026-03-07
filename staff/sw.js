@@ -1,4 +1,4 @@
-const CACHE_NAME = 'salad-house-staff-v2';
+const CACHE_NAME = 'salad-house-staff-v3';
 const ASSETS_TO_CACHE = [
   '/staff/',
   '/staff/index.html',

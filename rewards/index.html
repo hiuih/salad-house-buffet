@@ -2,15 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <script>
-      (function() {
-        var params = new URLSearchParams(window.location.search);
-        var redirect = params.get('redirect');
-        if (redirect) {
-          window.history.replaceState(null, '', redirect);
-        }
-      })();
-    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -21,73 +12,24 @@
     <meta property="og:description" content="Earn points and rewards at Salad House" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="manifest" href="/rewards/manifest-customer.json" />
+    <link rel="manifest" id="manifest-link" href="/rewards/manifest-customer.json" />
     <link rel="apple-touch-icon" href="/rewards/pwa-icon-192.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script type="module" crossorigin src="/rewards/assets/index-B_Ow0SGW.js"></script>
-    <link rel="stylesheet" crossorigin href="/rewards/assets/index-CuLjP7cs.css">
-    <style>
-      #install-gate {position:fixed;inset:0;z-index:99999;background:linear-gradient(160deg,#00261a 0%,#005236 50%,#00805a 100%);display:flex;align-items:center;justify-content:center;font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;padding:24px}
-      #install-gate.hidden{display:none}
-      .gate-card{background:#fff;border-radius:28px;padding:48px 32px;max-width:400px;width:100%;text-align:center;box-shadow:0 20px 60px rgba(0,0,0,0.3)}
-      .gate-icon{width:80px;height:80px;border-radius:20px;background:linear-gradient(135deg,#00805a,#00a374);display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2rem;color:#fff;box-shadow:0 8px 24px rgba(0,128,90,0.3)}
-      .gate-card h1{font-size:1.6rem;font-weight:800;color:#1e2822;margin-bottom:12px}
-      .gate-card p{color:#6b7c70;font-size:0.95rem;line-height:1.6;margin-bottom:28px}
-      .gate-divider{border:none;border-top:1px solid #e8ece9;margin:0 0 28px}
-      .gate-steps-title{font-size:0.8rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#a3b0a7;margin-bottom:20px}
-      .gate-step{display:flex;align-items:flex-start;gap:14px;text-align:left;margin-bottom:16px}
-      .gate-step-num{width:28px;height:28px;border-radius:50%;background:#e6f5ee;color:#005236;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.8rem;flex-shrink:0}
-      .gate-step-text{font-size:0.9rem;color:#4a5a50;line-height:1.5}
-      .gate-step-text i{color:#00805a}
-      .gate-step-text strong{color:#1e2822}
-      .gate-home-link{display:inline-block;margin-top:24px;color:#00805a;text-decoration:none;font-size:0.85rem;font-weight:600}
-      .gate-home-link:hover{text-decoration:underline}
-      .gate-ios,.gate-android{display:none}
-    </style>
-  </head>
-  <body>
-    <div id="install-gate">
-      <div class="gate-card">
-        <div class="gate-icon"><i class="fas fa-mobile-screen"></i></div>
-        <h1>Install Salad House Rewards</h1>
-        <p>To use this app, you need to add it to your home screen first. It only takes a few seconds!</p>
-        <hr class="gate-divider">
-        <div class="gate-steps-title">How to install</div>
-        <div class="gate-ios" id="gate-ios">
-          <div class="gate-step"><div class="gate-step-num">1</div><div class="gate-step-text">Tap the <strong>Share</strong> button <i class="fas fa-arrow-up-from-bracket"></i> at the bottom of Safari</div></div>
-          <div class="gate-step"><div class="gate-step-num">2</div><div class="gate-step-text">Scroll down and tap <strong>"Add to Home Screen"</strong> <i class="fas fa-plus-square"></i></div></div>
-          <div class="gate-step"><div class="gate-step-num">3</div><div class="gate-step-text">Tap <strong>"Add"</strong> in the top right, then open from your home screen</div></div>
-        </div>
-        <div class="gate-android" id="gate-android">
-          <div class="gate-step"><div class="gate-step-num">1</div><div class="gate-step-text">Tap the <strong>three dots</strong> <i class="fas fa-ellipsis-vertical"></i> menu in the top right of Chrome</div></div>
-          <div class="gate-step"><div class="gate-step-num">2</div><div class="gate-step-text">Tap <strong>"Install app"</strong> or <strong>"Add to Home screen"</strong></div></div>
-          <div class="gate-step"><div class="gate-step-num">3</div><div class="gate-step-text">Tap <strong>"Install"</strong> and open from your home screen</div></div>
-        </div>
-        <a href="/" class="gate-home-link"><i class="fas fa-arrow-left"></i> Back to saladhouse.ca</a>
-      </div>
-    </div>
-    <div id="root"></div>
     <script>
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/rewards/sw.js', { scope: '/rewards/' });
-      }
+      // Dynamically set manifest based on path
       (function() {
-        var isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-        var gate = document.getElementById('install-gate');
-        if (isStandalone) { gate.classList.add('hidden'); }
-        else {
-          gate.classList.remove('hidden');
-          var ua = navigator.userAgent || '';
-          var isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-          var isAndroid = /Android/.test(ua);
-          if (isIOS) { document.getElementById('gate-ios').style.display = 'block'; }
-          else if (isAndroid) { document.getElementById('gate-android').style.display = 'block'; }
-          else { document.getElementById('gate-ios').style.display = 'block'; document.getElementById('gate-android').style.display = 'block'; }
+        var path = window.location.pathname;
+        var link = document.getElementById('manifest-link');
+        if (path.startsWith('/staff')) {
+          link.href = '/manifest-staff.json';
+          document.querySelector('meta[name="theme-color"]').content = '#c8922a';
         }
       })();
     </script>
+    <script type="module" crossorigin src="/rewards/assets/index-JQKiZg9X.js"></script>
+    <link rel="stylesheet" crossorigin href="/rewards/assets/index-CuLjP7cs.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
   </body>
 </html>
