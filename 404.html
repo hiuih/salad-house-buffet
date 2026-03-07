@@ -4,10 +4,12 @@
   <meta charset="utf-8">
   <script>
     // GitHub Pages SPA redirect hack
-    // Redirects all 404s under /rewards/ back to /rewards/index.html
+    // Redirects all 404s back to the correct app's index.html
     // so React Router can handle the routing client-side
     var path = window.location.pathname;
-    if (path.startsWith('/rewards')) {
+    if (path.startsWith('/staff')) {
+      window.location.replace('/staff/' + '?redirect=' + encodeURIComponent(path));
+    } else if (path.startsWith('/rewards')) {
       window.location.replace('/rewards/' + '?redirect=' + encodeURIComponent(path));
     } else {
       window.location.replace('/');
