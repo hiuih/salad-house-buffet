@@ -15,37 +15,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="theme-color" content="#3d7a65" />
-    <title>Salad House Rewards</title>
-    <meta name="description" content="Earn points and rewards at Salad House - Vancouver's favourite salad bar & buffet" />
-    <meta property="og:title" content="Salad House Rewards" />
-    <meta property="og:description" content="Earn points and rewards at Salad House" />
+    <meta name="theme-color" content="#c8922a" />
+    <title>Salad House Staff Terminal</title>
+    <meta name="description" content="Salad House Staff Terminal" />
+    <meta property="og:title" content="Salad House Staff Terminal" />
+    <meta property="og:description" content="Salad House Staff Terminal" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link rel="manifest" id="manifest-link" href="/rewards/manifest-customer.json" />
-    <link rel="apple-touch-icon" href="/rewards/pwa-icon-192.png" />
+    <link rel="manifest" href="/staff/manifest.json" />
+    <link rel="apple-touch-icon" href="/staff/pwa-icon-192.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script>
-      (function() {
-        var path = window.location.pathname;
-        var link = document.getElementById('manifest-link');
-        if (path.startsWith('/rewards/staff')) {
-          link.href = '/rewards/manifest-staff.json';
-          document.querySelector('meta[name="theme-color"]').content = '#c8922a';
-        }
-      })();
-    </script>
-    <script type="module" crossorigin src="/rewards/assets/index-WRcUtjwx.js"></script>
-    <link rel="stylesheet" crossorigin href="/rewards/assets/index-87NQJm0v.css">
+    <script type="module" crossorigin src="/staff/assets/index-CQkzGvMY.js"></script>
+    <link rel="stylesheet" crossorigin href="/staff/assets/index-87NQJm0v.css">
     <style>
       #install-gate {
         position: fixed;
         inset: 0;
         z-index: 99999;
-        background: linear-gradient(160deg, #00261a 0%, #005236 50%, #00805a 100%);
+        background: linear-gradient(160deg, #3a2d1a 0%, #5c4a2a 50%, #8b6d3f 100%);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -66,14 +56,14 @@
         width: 80px;
         height: 80px;
         border-radius: 20px;
-        background: linear-gradient(135deg, #00805a, #00a374);
+        background: linear-gradient(135deg, #c8922a, #d4a858);
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 0 auto 24px;
         font-size: 2rem;
         color: #fff;
-        box-shadow: 0 8px 24px rgba(0,128,90,0.3);
+        box-shadow: 0 8px 24px rgba(200,146,42,0.3);
       }
       .gate-card h1 {
         font-size: 1.6rem;
@@ -111,8 +101,8 @@
         width: 28px;
         height: 28px;
         border-radius: 50%;
-        background: #e6f5ee;
-        color: #005236;
+        background: #fde8c3;
+        color: #8b6d3f;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -125,12 +115,12 @@
         color: #4a5a50;
         line-height: 1.5;
       }
-      .gate-step-text i { color: #00805a; }
+      .gate-step-text i { color: #c8922a; }
       .gate-step-text strong { color: #1e2822; }
       .gate-home-link {
         display: inline-block;
         margin-top: 24px;
-        color: #00805a;
+        color: #c8922a;
         text-decoration: none;
         font-size: 0.85rem;
         font-weight: 600;
@@ -144,7 +134,7 @@
     <div id="install-gate">
       <div class="gate-card">
         <div class="gate-icon"><i class="fas fa-mobile-screen"></i></div>
-        <h1>Install Salad House Rewards</h1>
+        <h1>Install Staff Terminal</h1>
         <p>To use this app, you need to add it to your home screen first. It only takes a few seconds!</p>
         <hr class="gate-divider">
         <div class="gate-steps-title">How to install</div>
@@ -183,7 +173,7 @@
     <div id="root"></div>
     <script>
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/rewards/sw.js', { scope: '/rewards/' });
+        navigator.serviceWorker.register('/staff/sw.js', { scope: '/staff/' });
       }
 
       (function() {
