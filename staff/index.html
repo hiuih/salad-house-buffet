@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#3d7a65" />
+    <title>Salad House Rewards</title>
+    <meta name="description" content="Earn points and rewards at Salad House - Vancouver's favourite salad bar & buffet" />
+    <meta property="og:title" content="Salad House Rewards" />
+    <meta property="og:description" content="Earn points and rewards at Salad House" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" id="manifest-link" href="/staff/manifest-customer.json" />
+    <link rel="apple-touch-icon" href="/staff/pwa-icon-192.png" />
+    <script>
+      // Dynamically set manifest based on path
+      (function() {
+        var path = window.location.pathname;
+        var link = document.getElementById('manifest-link');
+        if (path.startsWith('/staff')) {
+          link.href = '/manifest-staff.json';
+          document.querySelector('meta[name="theme-color"]').content = '#c8922a';
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/staff/assets/index-Brx2XJLe.js"></script>
+    <link rel="stylesheet" crossorigin href="/staff/assets/index-CuLjP7cs.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
