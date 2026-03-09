@@ -1,0 +1,23 @@
+{
+  "name": "Salad House Rewards",
+  "short_name": "Salad House",
+  "description": "Earn cashback rewards at Salad House",
+  "start_url": "/rewards/",
+  "scope": "/rewards/",
+  "display": "standalone",
+  "background_color": "#f5f7f5",
+  "theme_color": "#3d7a65",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/rewards/pwa-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/rewards/pwa-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+tmpclaude-*
+
+# iCloud duplicate files (e.g. "script 2.js", "index 2.html")
+* 2.*
+* 3.*
+* 2
+* 3

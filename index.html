@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salad House Buffet | Fresh & Healthy in City Square, Vancouver</title>
+    <meta name="description" content="Salad House Buffet in City Square Vancouver - fresh salads, poke bowls, sandwiches & noodles made with the freshest ingredients. Dine in, pickup or delivery.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="Circle-LightBox.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#rewards">Rewards</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#order" class="btn btn-nav">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <img src="Circle-LightBox.svg" alt="Salad House Buffet" class="hero-logo">
+            <span class="hero-badge"><i class="fas fa-star"></i> 4.9 Stars on Google</span>
+            <h1>Fresh. Healthy.<br><span class="text-accent">Delicious.</span></h1>
+            <p class="hero-slogan">For You, By You.</p>
+            <p class="hero-subtitle">Vancouver's favourite salad bar &amp; buffet in City Square. Made with the freshest ingredients, crafted with care.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#contact" class="btn btn-outline">Visit Us</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Rewards App Banner - Prominent -->
+    <section class="rewards-banner" id="rewards">
+        <div class="container">
+            <div class="rewards-banner-inner">
+                <div class="rewards-banner-content">
+                    <span class="rewards-badge"><i class="fas fa-fire"></i> NEW</span>
+                    <h2>Get Rewarded Every Time You Eat</h2>
+                    <p>Download the <strong>Salad House Rewards</strong> app to your phone. Earn cashback points with every visit and redeem them for free food!</p>
+                    <div class="rewards-banner-perks">
+                        <div class="perk"><i class="fas fa-check-circle"></i> Earn points on every purchase</div>
+                        <div class="perk"><i class="fas fa-check-circle"></i> Redeem for free meals &amp; drinks</div>
+                        <div class="perk"><i class="fas fa-check-circle"></i> Track your rewards on your phone</div>
+                    </div>
+                    <a href="rewards/" class="btn btn-primary btn-lg rewards-banner-btn"><i class="fas fa-mobile-screen"></i> Get the App</a>
+                </div>
+                <div class="rewards-banner-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="phone-app-header">
+                                <i class="fas fa-leaf"></i>
+                                <span>Salad House Rewards</span>
+                            </div>
+                            <div class="phone-points">
+                                <div class="points-circle">
+                                    <span class="points-number">250</span>
+                                    <span class="points-label">Points</span>
+                                </div>
+                            </div>
+                            <div class="phone-rewards-list">
+                                <div class="phone-reward"><i class="fas fa-gift"></i> Free Smoothie <span>100 pts</span></div>
+                                <div class="phone-reward"><i class="fas fa-gift"></i> Free Salad <span>200 pts</span></div>
+                                <div class="phone-reward active"><i class="fas fa-star"></i> Free Buffet <span>350 pts</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Install Section -->
+    <section class="section install-guide" id="install-guide">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">How to Install</span>
+                <h2>Add to Your <span class="text-accent">Home Screen</span></h2>
+                <p class="section-desc">Follow these simple steps to install the Salad House Rewards app on your phone.</p>
+            </div>
+            <div class="install-tabs">
+                <button class="install-tab active" data-install="iphone"><i class="fab fa-apple"></i> iPhone</button>
+                <button class="install-tab" data-install="android"><i class="fab fa-android"></i> Android</button>
+            </div>
+            <div class="install-steps-container">
+                <!-- iPhone Steps -->
+                <div class="install-steps active" id="install-iphone">
+                    <div class="install-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon"><i class="fas fa-arrow-up-from-bracket"></i></div>
+                        <h3>Tap the Share Button</h3>
+                        <p>Open <strong>saladhouse.ca/rewards</strong> in Safari, then tap the <strong>Share</strong> button <i class="fas fa-arrow-up-from-bracket"></i> at the bottom of your screen.</p>
+                    </div>
+                    <div class="install-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon"><i class="fas fa-plus-square"></i></div>
+                        <h3>Add to Home Screen</h3>
+                        <p>Scroll down in the share menu and tap <strong>"Add to Home Screen"</strong> <i class="fas fa-plus-square"></i>.</p>
+                    </div>
+                    <div class="install-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3>Tap Add</h3>
+                        <p>Tap <strong>"Add"</strong> in the top right corner. The app will appear on your home screen like a real app!</p>
+                    </div>
+                </div>
+                <!-- Android Steps -->
+                <div class="install-steps" id="install-android">
+                    <div class="install-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon"><i class="fas fa-ellipsis-vertical"></i></div>
+                        <h3>Tap the Menu</h3>
+                        <p>Open <strong>saladhouse.ca/rewards</strong> in Chrome, then tap the <strong>three dots</strong> <i class="fas fa-ellipsis-vertical"></i> menu in the top right.</p>
+                    </div>
+                    <div class="install-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon"><i class="fas fa-download"></i></div>
+                        <h3>Install App</h3>
+                        <p>Tap <strong>"Install app"</strong> or <strong>"Add to Home screen"</strong> from the menu.</p>
+                    </div>
+                    <div class="install-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+                        <h3>Confirm Install</h3>
+                        <p>Tap <strong>"Install"</strong> on the popup. The app icon will appear on your home screen!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">Our Story</span>
+                    <h2>A Fresh Take on <span class="text-accent">Healthy Eating</span></h2>
+                    <p>At Salad House Buffet, we believe eating healthy should never mean compromising on taste. Nestled in the heart of City Square, Vancouver, we bring you a vibrant buffet experience with a clean salad bar, an incredible selection of food, and a great variety of fresh vegetables and fruits.</p>
+                    <p>Every bowl, every plate, every bite is prepared with super fresh ingredients and served with the friendliest service in town.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">4.9</span>
+                            <span class="stat-label">Star Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">48+</span>
+                            <span class="stat-label">Happy Reviews</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Fresh Daily</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="about-image-card">
+                        <img src="https://lh3.googleusercontent.com/p/AF1QipNwEu8v7nxHCRaO18_5UYIClyZyjtTO8pyuL4Jb=w1200-h900-k-no" alt="Fresh Salad House Buffet Selection" loading="lazy">
+                    </div>
+                    <div class="about-image-card offset">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800" alt="Fresh Ingredients at Salad House" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>We source the freshest vegetables, fruits, and premium ingredients every single day.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Healthy Options</h3>
+                    <p>Nutritious meals that taste amazing. Eating well has never been this enjoyable.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-utensils"></i></div>
+                    <h3>Buffet Style</h3>
+                    <p>Build your perfect plate from our wide selection of salads, proteins, and toppings.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                    <h3>Delivery Available</h3>
+                    <p>Order through Uber Eats or DoorDash and enjoy our fresh food at home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What We Offer Section -->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What We Offer</span>
+                <h2>Something for <span class="text-accent">Everyone</span></h2>
+                <p class="section-desc">Explore our diverse selection of healthy, flavourful dishes made fresh daily.</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-icon"><i class="fas fa-leaf"></i></div>
+                    <div class="menu-card-content">
+                        <h3>Fresh Salads</h3>
+                        <p>Build your own salad from our expansive salad bar with crisp greens, colourful vegetables, premium toppings, and house-made dressings.</p>
+                        <span class="menu-tag">Most Popular</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon"><i class="fas fa-fish"></i></div>
+                    <div class="menu-card-content">
+                        <h3>Poke Bowls</h3>
+                        <p>Hawaiian-inspired bowls loaded with fresh fish, rice, vibrant veggies, and flavourful sauces for a satisfying, healthy meal.</p>
+                        <span class="menu-tag">Fan Favourite</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon"><i class="fas fa-burger"></i></div>
+                    <div class="menu-card-content">
+                        <h3>Sandwiches</h3>
+                        <p>Hearty sandwiches made with quality bread and stuffed with fresh vegetables, proteins, and our signature sauces.</p>
+                        <span class="menu-tag">Great for Lunch</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon"><i class="fas fa-bowl-food"></i></div>
+                    <div class="menu-card-content">
+                        <h3>Noodles</h3>
+                        <p>Delicious noodle dishes tossed with fresh vegetables and savoury sauces, served warm and satisfying.</p>
+                        <span class="menu-tag">Comforting</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon"><i class="fas fa-apple-whole"></i></div>
+                    <div class="menu-card-content">
+                        <h3>Fresh Fruits</h3>
+                        <p>A colourful selection of seasonal fruits, perfect as a side, snack, or healthy dessert option.</p>
+                        <span class="menu-tag">Seasonal</span>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon"><i class="fas fa-plate-wheat"></i></div>
+                    <div class="menu-card-content">
+                        <h3>Buffet Specials</h3>
+                        <p>Rotating daily specials from our buffet featuring a variety of warm dishes, soups, and seasonal favourites.</p>
+                        <span class="menu-tag">Daily Rotation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Menu Section -->
+    <section class="section detailed-menu" id="full-menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Menu</span>
+                <h2>Prices &amp; <span class="text-accent">Details</span></h2>
+                <p class="section-desc">All items freshly made to order. For you, by you.</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="menu-tab active" data-tab="sandwiches"><i class="fas fa-burger"></i> Sandwiches</button>
+                <button class="menu-tab" data-tab="smoothies"><i class="fas fa-blender"></i> Smoothies</button>
+                <button class="menu-tab" data-tab="juices"><i class="fas fa-glass-water"></i> Juices</button>
+                <button class="menu-tab" data-tab="breakfast"><i class="fas fa-egg"></i> Breakfast</button>
+            </div>
+
+            <!-- Sandwiches -->
+            <div class="menu-tab-content active" id="tab-sandwiches">
+                <div class="menu-banner">
+                    <img src="sandwiches updated.png" alt="Freshly Made Sandwiches">
+                </div>
+                <p class="menu-tab-note"><i class="fas fa-wand-magic-sparkles"></i> All customizable &mdash; choose your own toppings!</p>
+                <div class="detailed-menu-grid">
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Avocado</h4>
+                            <span class="detailed-price">$4.99</span>
+                        </div>
+                        <p>Cheese, Avocado, Black Olives, All Grain Toast</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Spin &amp; Shine</h4>
+                            <span class="detailed-price">$8.99</span>
+                        </div>
+                        <p>Scrambled Eggs, Spinach &amp; Feta Cheese</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Hard Boil Egg</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Hard Boiled Eggs</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Turkey</h4>
+                            <span class="detailed-price">$8.99</span>
+                        </div>
+                        <p>Turkey</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Light Tuna</h4>
+                            <span class="detailed-price">$8.99</span>
+                        </div>
+                        <p>Light Tuna</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Ham &amp; Swiss Cheese</h4>
+                            <span class="detailed-price">$8.99</span>
+                        </div>
+                        <p>Ham &amp; Swiss Cheese</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Falafel</h4>
+                            <span class="detailed-price">$9.99</span>
+                        </div>
+                        <p>Falafel</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Chicken</h4>
+                            <span class="detailed-price">$9.99</span>
+                        </div>
+                        <p>Chicken</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Egg &amp; Salmon</h4>
+                            <span class="detailed-price">$10.99</span>
+                        </div>
+                        <p>Egg &amp; Salmon</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Special!</h4>
+                            <span class="detailed-price">$11.99</span>
+                        </div>
+                        <p>Ham, Salami, Turkey</p>
+                    </div>
+                    <div class="detailed-item highlight">
+                        <div class="detailed-item-header">
+                            <h4>Chicken Sizzle</h4>
+                            <span class="detailed-price">$12.99</span>
+                        </div>
+                        <p>Grilled Chicken, Melted Swiss Cheese</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smoothies -->
+            <div class="menu-tab-content" id="tab-smoothies">
+                <div class="menu-banner">
+                    <img src="smoothies updated.png" alt="Fresh Fruit Smoothies">
+                </div>
+                <p class="menu-tab-note"><i class="fas fa-info-circle"></i> Available in 16oz &amp; 24oz</p>
+                <div class="detailed-menu-grid">
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Storm Smoothie</h4>
+                            <span class="detailed-price">$6.99 / $8.99</span>
+                        </div>
+                        <p>Strawberry, Banana, Milk</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Bonanza</h4>
+                            <span class="detailed-price">$6.99 / $8.99</span>
+                        </div>
+                        <p>Blueberry, Banana, Milk</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Pi&ntilde;a Colada</h4>
+                            <span class="detailed-price">$6.99 / $8.99</span>
+                        </div>
+                        <p>Pineapple, Mango, Banana, Milk</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Mixed Berry</h4>
+                            <span class="detailed-price">$6.99 / $8.99</span>
+                        </div>
+                        <p>Strawberry, Raspberry, Blueberry, Blackberry, Banana, Milk</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Green Berry</h4>
+                            <span class="detailed-price">$6.99 / $8.99</span>
+                        </div>
+                        <p>Spinach, Strawberry, Mango, Banana, Milk</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Green Smoothie</h4>
+                            <span class="detailed-price">$7.99 / $9.99</span>
+                        </div>
+                        <p>Avocado, Banana, Almond, Milk</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>PB &amp; S</h4>
+                            <span class="detailed-price">$7.99 / $9.99</span>
+                        </div>
+                        <p>Peanut Butter, Banana, Spinach, Milk</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Blueberry Blast</h4>
+                            <span class="detailed-price">$7.99 / $9.99</span>
+                        </div>
+                        <p>Blueberry, Banana, Avocado, Chia Seeds</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Pine &amp; Shine</h4>
+                            <span class="detailed-price">$8.99 / $10.99</span>
+                        </div>
+                        <p>Pineapple, Cucumber, Celery, Ginger, Lemon, Banana</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Mango Pistachio</h4>
+                            <span class="detailed-price">$9.99 / $11.99</span>
+                        </div>
+                        <p>Mango, Banana, Pistachio, Milk</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Nutella Banana</h4>
+                            <span class="detailed-price">$9.99 / $11.99</span>
+                        </div>
+                        <p>Nutella, Banana, Strawberry, Milk</p>
+                    </div>
+                </div>
+                <div class="menu-addons">
+                    <h4>Add-ons</h4>
+                    <span>+$1 Almond Milk / Coconut Water</span>
+                    <span>+$1.99 Nuts</span>
+                    <span>+$2.99 Whey Protein (Chocolate/Vanilla)</span>
+                </div>
+            </div>
+
+            <!-- Juices -->
+            <div class="menu-tab-content" id="tab-juices">
+                <div class="menu-banner">
+                    <img src="juices updated.png" alt="Freshly Squeezed Juices">
+                </div>
+                <p class="menu-tab-note"><i class="fas fa-lemon"></i> 16oz Fresh &mdash; All Customizable!</p>
+                <div class="detailed-menu-grid">
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Green Detox</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Apples, Lime, Kale/Celery</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Red Detox</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Apples, Beets, Carrots, Ginger</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Energizing Juice</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Apples, Celery, Oranges</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Lion's Juice</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Grapefruits, Oranges, Apples</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Carrot Juice</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Carrots</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Apple Juice</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Apples</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Orange Juice</h4>
+                            <span class="detailed-price">$8.99</span>
+                        </div>
+                        <p>Oranges</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Watermelon Juice</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Watermelons</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Orange Fun</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Oranges, Carrots</p>
+                    </div>
+                    <div class="detailed-item">
+                        <div class="detailed-item-header">
+                            <h4>Green Glow</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Celery, Kale, Cucumber, Lemon, Ginger</p>
+                    </div>
+                    <div class="detailed-item highlight">
+                        <div class="detailed-item-header">
+                            <h4>Build A Blend!</h4>
+                            <span class="detailed-price">$8.99</span>
+                        </div>
+                        <p>Create Your Own Juice With Customizable Flavours</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Breakfast -->
+            <div class="menu-tab-content" id="tab-breakfast">
+                <p class="menu-tab-note"><i class="fas fa-clock"></i> Served 8:30 AM &ndash; 11:00 AM</p>
+                <div class="detailed-menu-grid">
+                    <div class="detailed-item breakfast-feature">
+                        <div class="detailed-item-header">
+                            <h4>Scrambled Eggs Plate</h4>
+                            <span class="detailed-price">$7.99</span>
+                        </div>
+                        <p>Up to 4 of your toppings! Served with toast and fresh salad.</p>
+                        <span class="menu-tag">Add coffee or tea for $1.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Gallery</span>
+                <h2>Sights of <span class="text-accent">Salad House</span></h2>
+                <p class="section-desc">Take a look at our fresh offerings and cozy location at City Square.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://lh3.googleusercontent.com/p/AF1QipNwEu8v7nxHCRaO18_5UYIClyZyjtTO8pyuL4Jb=w800-h600-k-no" alt="Salad House Selection" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=1000,height=600,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/1eb3338e-7e63-4de7-ae59-1f2f7bcebc5e.jpg" alt="Fresh Food Display" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=800" alt="Healthy Buddha Bowl" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=800" alt="Fresh Salad Bar" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">What People Say</span>
+                <h2>Loved by <span class="text-accent">Vancouver</span></h2>
+                <p class="section-desc">Real 5-star reviews from our happy customers.</p>
+            </div>
+            <div class="reviews-grid" id="reviewsGrid">
+                <!-- Reviews are loaded dynamically via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Location Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Visit Us</span>
+                <h2>Find Us at <span class="text-accent">City Square</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>555 W 12th Ave #09A<br>Vancouver, BC V5Z 3X7<br>City Square Shopping Centre</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:+16043687277">(604) 368-7277</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <h3>Hours</h3>
+                            <div class="hours-table">
+                                <div class="hours-row">
+                                    <span>Monday - Sunday</span>
+                                    <span>9:00 AM - 6:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Salad+House+Buffet,555+W+12th+Ave,Vancouver+BC&zoom=16"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Salad House Buffet Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order CTA Section -->
+    <section class="section cta" id="order">
+        <div class="container cta-content">
+            <h2>Ready to Eat Fresh?</h2>
+            <p>Order online for pickup or delivery, or visit us at City Square.</p>
+            <div class="cta-buttons">
+                <a href="https://www.doordash.com/en-CA/store/salad-house-buffet-vancouver-27857831/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                    <i class="fas fa-motorcycle"></i> Order on DoorDash
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <img src="Signage-Rectangle.svg" alt="Salad House Buffet" class="logo-img footer-logo-img">
+                    </a>
+                    <p>Fresh, healthy, and delicious food in the heart of Vancouver's City Square.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#rewards">Rewards</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>555 W 12th Ave #09A<br>Vancouver, BC V5Z 3X7</p>
+                    <p><a href="tel:+16043687277">(604) 368-7277</a></p>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/saladhouse.vancouver/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.google.ca/maps/place/Salad+House/@49.2611247,-123.1162319,17z/data=!4m8!3m7!1s0x548673e7e49246a1:0xc9ac0d1b2c7788c9!8m2!3d49.2611247!4d-123.1162319!9m1!1b1!16s%2Fg%2F11fyxnqwh1" target="_blank" rel="noopener" aria-label="Google Maps Reviews"><i class="fab fa-google"></i></a>
+                        <a href="https://www.yelp.com/biz/salad-house-buffet-vancouver" target="_blank" rel="noopener" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Salad House Buffet. All rights reserved. &nbsp;|&nbsp; <a href="/staff/" style="color:#999;text-decoration:none;font-size:0.85em;">Staff Portal</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
