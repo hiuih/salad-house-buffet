@@ -1,0 +1,10 @@
+# Treat built assets as binary — prevent CRLF corruption
+*.js binary
+*.css binary
+*.png binary
+*.svg binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.woff binary
+*.woff2 binary

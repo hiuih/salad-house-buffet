@@ -1,10 +1,12 @@
-const CACHE_NAME = 'salad-house-rewards-v4';
+const CACHE_NAME = 'salad-house-rewards-v5';
 const ASSETS_TO_CACHE = [
   '/rewards/',
   '/rewards/index.html',
   '/rewards/manifest-customer.json',
   '/rewards/pwa-icon-192.png',
-  '/rewards/pwa-icon-512.png'
+  '/rewards/pwa-icon-512.png',
+  '/rewards/assets/index-KcPBb5U8.js',
+  '/rewards/assets/index-CuLjP7cs.css'
 ];
 
 self.addEventListener('install', (event) => {
